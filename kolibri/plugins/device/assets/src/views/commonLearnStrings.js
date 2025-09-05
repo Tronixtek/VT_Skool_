@@ -5,7 +5,7 @@ export const learnStrings = createTranslator('CommonLearnStrings', {
   learnLabel: {
     message: 'Learn',
     context:
-      "Each time a learner signs in to VT_SKOOL, the first thing they see is the  'Learn' page with the list of all the classes they are enrolled to.",
+      "Each time a learner signs in to Kolibri, the first thing they see is the  'Learn' page with the list of all the classes they are enrolled to.",
   },
   resumeLabel: {
     message: 'Resume',
@@ -43,7 +43,7 @@ export const learnStrings = createTranslator('CommonLearnStrings', {
   logo: {
     message: 'From the channel {channelTitle}',
     context:
-      'Added to create a complete alt-text description of a logo on a content card to indicate to the user what channel the resource belongs to. For example: From the channel VT_SKOOL - English',
+      'Added to create a complete alt-text description of a logo on a content card to indicate to the user what channel the resource belongs to. For example: From the channel Khan Academy - English',
   },
   resourceCompletedLabel: {
     message: 'Resource completed',
@@ -78,6 +78,11 @@ export const learnStrings = createTranslator('CommonLearnStrings', {
     message: 'Author',
     context:
       'Indicates who is the author of that specific learning resource. For example, "Author: Learning Equality".',
+  },
+  license: {
+    message: 'License',
+    context:
+      'Indicates the type of license of that specific learning resource. For example, "License: CC BY-NC-ND".\n',
   },
   toggleLicenseDescription: {
     message: 'Toggle license description',
@@ -123,13 +128,13 @@ export const learnStrings = createTranslator('CommonLearnStrings', {
     context: 'Title section containing unpinned devices',
   },
   loadingLibraries: {
-    message: 'Loading VT_Skool libraries around you',
+    message: 'Loading Kolibri libraries around you',
     context:
-      "Status message displayed on the Library page while VT_Skool on the user's device is searching the local network for other devices with VT_Skool, in order to make their libraries available for browsing.",
+      "Status message displayed on the Library page while Kolibri on the user's device is searching the local network for other devices with Kolibri, in order to make their libraries available for browsing.",
   },
   cannotConnectToLibrary: {
     message:
-      'VT_Skool cannot connect to the library on {deviceName}. Your network connection may be unstable, or {deviceName} is no longer available.',
+      'Kolibri cannot connect to the library on {deviceName}. Your network connection may be unstable, or {deviceName} is no longer available.',
     context: '',
   },
   backToAllLibraries: {

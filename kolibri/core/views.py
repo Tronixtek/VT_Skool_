@@ -193,7 +193,7 @@ class RootURLRedirectView(View):
             return HttpResponseRedirect(url)
         raise Http404(
             _(
-                "No appropriate redirect pages found. It is likely that Kolibri is badly configured"
+                "No appropriate redirect pages found. It is likely that VT_Skool is badly configured"
             )
         )
 

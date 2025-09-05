@@ -21,8 +21,8 @@
     name: 'KolibriLoadingSnippet',
     $trs: {
       kolibriLoading: {
-        message: 'Kolibri loading',
-        context: 'Indicates Kolibri is loading',
+        message: 'VT_Skool loading',
+        context: 'Indicates VT_Skool is loading',
       },
     },
   };

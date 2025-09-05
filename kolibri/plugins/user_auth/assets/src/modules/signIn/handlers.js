@@ -15,7 +15,7 @@ const snackbarTranslator = createTranslator('UserPageSnackbars', {
   signedOut: {
     message: 'You were automatically signed out due to inactivity',
     context:
-      'Kolibri will automatically sign out users if they are inactive after a certain period of time. This is the message the user sees when they are signed out.',
+      'VT_Skool will automatically sign out users if they are inactive after a certain period of time. This is the message the user sees when they are signed out.',
   },
 });
 

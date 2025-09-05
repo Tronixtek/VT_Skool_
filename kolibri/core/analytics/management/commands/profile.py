@@ -43,7 +43,7 @@ class Command(BaseCommand):
     - Memory (In Mbytes) used by the kolibri process (just RAM, not swap memory included)
     """
 
-    help = "Logs performance/profiling info in the server running Kolibri"
+    help = "Logs performance/profiling info in the server running VT_Skool"
 
     def add_arguments(self, parser):
         parser.add_argument(
@@ -62,8 +62,8 @@ class Command(BaseCommand):
 
         if not conf.OPTIONS["Server"]["PROFILE"]:
             logger.error(
-                "Kolibri has not enabled profiling of its requests."
-                "To enable it, edit the Kolibri options.ini file and "
+                "VT_Skool has not enabled profiling of its requests."
+                "To enable it, edit the VT_Skool options.ini file and "
                 "add `PROFILE = true` in the [Server] section"
             )
 
@@ -93,7 +93,7 @@ class Command(BaseCommand):
                 f.write("\n{}".format(file_timestamp))
         except (IOError, OSError):
             logger.error(
-                "Impossible to create profile lock file. Kolibri won't profile its requests"
+                "Impossible to create profile lock file. VT_Skool won't profile its requests"
             )
         samples = 1
         num_samples = options["num_samples"]

@@ -81,7 +81,7 @@
       jumpToPositionInBook: {
         message: 'Jump to position in book',
         context:
-          'To read digital books in Kolibri learners have several available controls inside the reader.\n\nOne of them allows the learner to access a specific page in the book using the slider control bar at the bottom of the screen.',
+          'To read digital books in VT_SKOOL learners have several available controls inside the reader.\n\nOne of them allows the learner to access a specific page in the book using the slider control bar at the bottom of the screen.',
       },
       preparingSlider: {
         message: 'Preparing slider',

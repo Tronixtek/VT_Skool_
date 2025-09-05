@@ -175,13 +175,12 @@
                 class="side-nav-scrollable-area-footer-logo"
               />
               <div class="side-nav-scrollable-area-footer-info">
-                <p>{{ footerMsg }}</p>
-                <!-- Not translated -->
-                <p>© {{ copyrightYear }} Learning Equality</p>
+                <p>VT_SKOOL Portal</p>
+                <p>© 2025 VT_SKOOL</p>
                 <p>
                   <KButton
                     ref="privacyLink"
-                    :text="coreString('usageAndPrivacyLabel')"
+                    :text="'Usage and privacy'"
                     class="privacy-link"
                     appearance="basic-link"
                     @click="handleClickPrivacyLink"
@@ -376,7 +375,7 @@
         return this.isLearnerOnlyImport && (this.isSuperuser || this.isAdmin || this.isCoach);
       },
       footerMsg() {
-        return this.$tr('poweredBy', { version: __version });
+        return 'VT_SKOOL Portal';
       },
       topItems() {
         return this.navItems
@@ -401,10 +400,7 @@
         return allNavItems.find(item => item.active);
       },
       sideNavTitleText() {
-        if (this.themeConfig.sideNav.title) {
-          return this.themeConfig.sideNav.title;
-        }
-        return this.coreString('kolibriLabel');
+        return 'VT_SKOOL';
       },
       userIsLearner() {
         // learners and SOUD learners should display
@@ -536,6 +532,10 @@
         message: 'Sign out',
         context:
           "Users can exit Kolibri by selecting 'Sign out' from the user menu in the upper right corner.",
+      },
+      kolibriLibrary: {
+        message: "VT_SKOOL Library",
+        context: "Label for the main library",
       },
     },
   };

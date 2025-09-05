@@ -481,7 +481,7 @@
       channelsLabel() {
         if (this.deviceId) {
           if (this.deviceId === this.studioId) {
-            return this.learnString('kolibriLibrary');
+            return 'VT_SKOOL Library';
           } else {
             return this.$tr('libraryOf', { device: this.deviceName });
           }
@@ -583,8 +583,8 @@
       /* eslint-disable kolibri/vue-no-unused-translations */
       // These are mostly used in the OtherLibraries component and passed in from here.
       otherLibraries: {
-        message: 'Other libraries',
-        context: 'Header for viewing other remote content Library',
+        message: 'Other VT_SKOOL Libraries',
+        context: 'Header for viewing other remote VT_SKOOL Libraries',
       },
       searchingOtherLibrary: {
         message: 'Searching for libraries around you.',

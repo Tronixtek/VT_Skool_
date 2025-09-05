@@ -66,4 +66,4 @@ def site_title():
     default will be returned. The site title may be translated, to allow for
     transliteration into other alphabets where needed.
     """
-    return ThemeHook.get_theme().get("siteTitle", _("Kolibri"))
+    return ThemeHook.get_theme().get("siteTitle", _("VT_Skool"))

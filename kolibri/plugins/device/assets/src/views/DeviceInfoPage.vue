@@ -30,7 +30,7 @@
           </tr>
           <tr>
             <th>
-              {{ $tr('kolibriVersion') }}
+              {{ $tr('VT_SkoolVersion') }}
             </th>
             <td :class="windowIsSmall ? 'mobile' : ''">
               {{ deviceInfo.version }}

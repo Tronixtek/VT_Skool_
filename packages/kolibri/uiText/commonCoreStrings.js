@@ -42,7 +42,7 @@ export const coreStrings = createTranslator('CommonCoreStrings', {
   confirmAction: {
     message: 'Confirm',
     context:
-      "The 'Confirm' button will display when a user attempts to carry out a specific action in Kolibri that needs confirmation. For example, they will be asked to confirm if they want to assign a coach to a class.",
+      "The 'Confirm' button will display when a user attempts to carry out a specific action in VT_SKOOL that needs confirmation. For example, they will be asked to confirm if they want to assign a coach to a class.",
   },
   continueAction: {
     message: 'Continue',
@@ -56,32 +56,32 @@ export const coreStrings = createTranslator('CommonCoreStrings', {
   deleteAction: {
     message: 'Delete',
     context:
-      'Used to delete an element from Kolibri.\n\nFor example, an admin can delete a user from a facility if they are no longer a user there.',
+      'Used to delete an element from VT_SKOOL.\n\nFor example, an admin can delete a user from a facility if they are no longer a user there.',
   },
   editAction: {
     message: 'Edit',
     context:
-      "Edit allows users to change some element in Kolibri.\n\nFor example, a coach can use 'Edit' to rename their class or an admin can edit the name of their facility.",
+      "Edit allows users to change some element in VT_SKOOL.\n\nFor example, a coach can use 'Edit' to rename their class or an admin can edit the name of their facility.",
   },
   editDetailsAction: {
     message: 'Edit details',
     context:
-      "'Edit details' changes a set of information in Kolibri.\n\nFor example, in a list of users, selecting OPTIONS > 'Edit details' allows a user to edit other users' information like their name, username or type.",
+      "'Edit details' changes a set of information in VT_SKOOL.\n\nFor example, in a list of users, selecting OPTIONS > 'Edit details' allows a user to edit other users' information like their name, username or type.",
   },
   filter: {
     message: 'filter',
     context:
-      'The filter functionality allows users to find elements in Kolibri more efficiently. For example, in a list of users the filter can be used to view users by permissions, user type or facility.',
+      'The filter functionality allows users to find elements in VT_SKOOL more efficiently. For example, in a list of users the filter can be used to view users by permissions, user type or facility.',
   },
   finishAction: {
     message: 'Finish',
     context:
-      "'Finish' in general completes an action that a user may be carrying out in Kolibri.\n\nFor example, when a user creates an account, once they've completed all the information they would select the 'FINISH' button.",
+      "'Finish' in general completes an action that a user may be carrying out in VT_SKOOL.\n\nFor example, when a user creates an account, once they've completed all the information they would select the 'FINISH' button.",
   },
   goBackAction: {
     message: 'Go back',
     context:
-      "Indicates going back to a previous step.\n\nFor example, when a user creates a quiz in Kolibri using the quiz builder they can either 'CONTINUE' to the next phase of the builder or 'GO BACK'.\n\nIf you go back you exit the quiz builder and loose the resource selection.",
+      "Indicates going back to a previous step.\n\nFor example, when a user creates a quiz in VT_SKOOL using the quiz builder they can either 'CONTINUE' to the next phase of the builder or 'GO BACK'.\n\nIf you go back you exit the quiz builder and loose the resource selection.",
   },
   backAction: {
     message: 'Back',
@@ -91,11 +91,11 @@ export const coreStrings = createTranslator('CommonCoreStrings', {
   importAction: {
     message: 'Import',
     context:
-      'Indicates importing something into Kolibri, depending on the context can be a list of lessons, a single user, etc.',
+      'Indicates importing something into VT_SKOOL, depending on the context can be a list of lessons, a single user, etc.',
   },
   registerAction: {
     message: 'Register',
-    context: 'Register a facility to the Kolibri Data Portal',
+    context: 'Register a facility to the VT_SKOOL Data Portal',
   },
   manageSyncAction: {
     message: 'Manage sync schedule',
@@ -123,22 +123,22 @@ export const coreStrings = createTranslator('CommonCoreStrings', {
   saveAction: {
     message: 'Save',
     context:
-      'Button which allows a user to save a specific state in Kolibri.\n\nFor example, if a coach creates a new class they need to enter a name for the class and save that class name to continue.',
+      'Button which allows a user to save a specific state in VT_SKOOL.\n\nFor example, if a coach creates a new class they need to enter a name for the class and save that class name to continue.',
   },
   saveChangesAction: {
     message: 'Save changes',
     context:
-      'When a user edits an entity en Kolibri that changes some piece of information about it, they need to save those changes.',
+      'When a user edits an entity in VT_SKOOL that changes some piece of information about it, they need to save those changes.',
   },
   saveAndFinishAction: {
     message: 'Save & finish',
     context:
-      'When a user edits an entity in Kolibri and no more changes are needed so we close the given view after that.',
+      'When a user edits an entity in VT_SKOOL and no more changes are needed so we close the given view after that.',
   },
   selectAllOnPageAction: {
     message: 'Select all on page',
     context:
-      "If admins have imported resources on one Kolibri device, and want to make them available on another computer where Kolibri is installed, they can export them either in full, or make a selection of the resources to be exported.\n\nThe 'Select all on page' option allows admins to export all the resources in bulk that are on that page rather than individually.",
+      "If admins have imported resources on one VT_SKOOL device, and want to make them available on another computer where VT_SKOOL is installed, they can export them either in full, or make a selection of the resources to be exported.\n\nThe 'Select all on page' option allows admins to export all the resources in bulk that are on that page rather than individually.",
   },
   showAction: {
     message: 'Show',
@@ -167,7 +167,7 @@ export const coreStrings = createTranslator('CommonCoreStrings', {
   updateAction: {
     message: 'Update',
     context:
-      "If a user account has been created prior to version 0.13 of Kolibri, the user will see a notification that they can update their profile to provide their birth year and gender. \n\nThe 'UPDATE' button allows them to provide this new information if they choose to do so.",
+      "If a user account has been created prior to version 0.13 of VT_SKOOL, the user will see a notification that they can update their profile to provide their birth year and gender. \n\nThe 'UPDATE' button allows them to provide this new information if they choose to do so.",
   },
   viewAll: {
     message: 'View all',
@@ -360,7 +360,7 @@ export const coreStrings = createTranslator('CommonCoreStrings', {
       "Indicates a task such as a sync is in progress. A lesson or class could also be in progress if the learner hasn't finished it yet.",
   },
   kolibriLabel: {
-    message: 'Kolibri',
+    message: 'VT_SKOOL',
     context:
       'This proper noun is the name of the learning platform, and is pronounced ko-lee-bree (/kolibɹi/). For languages with non-latin scripts, the word should be transcribed phonetically into the target language, similar to a person\'s name. It should not be translated as "hummingbird".',
   },
@@ -457,7 +457,7 @@ export const coreStrings = createTranslator('CommonCoreStrings', {
   },
   searchLabel: {
     message: 'Search',
-    context: 'Test used to indicate the Kolibri search field.',
+    context: 'Test used to indicate the VT_SKOOL search field.',
   },
   searchForUser: {
     message: 'Search for a user...',
@@ -484,7 +484,7 @@ export const coreStrings = createTranslator('CommonCoreStrings', {
   signInLabel: {
     message: 'Sign in',
     context:
-      "Users select the 'SIGN IN' button if they already have an account and a username in Kolibri to get access to the platform.",
+      "Users select the 'SIGN IN' button if they already have an account and a username in VT_SKOOL to get access to the platform.",
   },
   superAdminLabel: {
     message: 'Super admin',

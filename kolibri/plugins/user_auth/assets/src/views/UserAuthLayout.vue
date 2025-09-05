@@ -115,7 +115,7 @@
     },
     $trs: {
       kolibriTitleMessage: {
-        message: '{ title } - Kolibri',
+        message: '{ title } - VT_SKOOL',
         context: 'DO NOT TRANSLATE\nCopy the source string.',
       },
       errorPageTitle: {

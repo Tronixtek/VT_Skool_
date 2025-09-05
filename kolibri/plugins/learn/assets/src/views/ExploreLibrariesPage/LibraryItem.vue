@@ -1,4 +1,4 @@
-<template>
+            <template>
 
   <KGrid
     :debug="false"
@@ -138,8 +138,8 @@
     $trs: {
       channels: {
         message:
-          '{channels, number, integer} channels | Internet connection needed to browse and download resources',
-        context: 'Indicates the number of channels on the Kolibri library',
+          '{channels, number, integer} channels | Internet connection needed to browse and download resources on VT_SKOOL',
+        context: 'Indicates the number of channels on the VT_SKOOL library',
       },
       // The strings below are not used currently used in the code.
       // This is to aid the translation of the string

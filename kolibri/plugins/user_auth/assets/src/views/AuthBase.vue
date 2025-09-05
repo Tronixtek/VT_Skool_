@@ -22,7 +22,7 @@
               class="kolibri-title"
               :style="[{ color: $themeTokens.primary }, themeConfig.signIn.titleStyle]"
             >
-              {{ logoText }}
+              Welcome to VT_SKOOL Portal
             </h1>
             <p data-test="restrictedAccess">
               {{ $tr('restrictedAccess') }}
@@ -47,7 +47,7 @@
               class="kolibri-title"
               :style="[{ color: $themeTokens.primary }, themeConfig.signIn.titleStyle]"
             >
-              {{ logoText }}
+              Welcome to VT_SKOOL Portal
             </h1>
             <p
               v-if="themeConfig.signIn.showPoweredBy"
@@ -56,13 +56,13 @@
             >
               <KButton
                 v-if="oidcProviderFlow"
-                :text="$tr('poweredByKolibri')"
+                :text="$tr('poweredByVT_SKOOL')"
                 appearance="basic-link"
                 @click="whatsThisModalVisible = true"
               />
               <KExternalLink
                 v-else
-                :text="$tr('poweredByKolibri')"
+                :text="$tr('poweredByVT_SKOOL')"
                 :primary="true"
                 href="https://learningequality.org/r/powered_by_kolibri"
                 :openInNewTab="true"
@@ -120,14 +120,10 @@
         >
           <LanguageSwitcherFooter />
           <div class="small-text">
-            <span class="version-string">
-              {{ versionMsg }}
-            </span>
-            <CoreLogo
-              v-if="themeConfig.signIn.showKolibriFooterLogo"
-              class="footer-logo"
-            />
-            <span v-else> • </span>
+            <span class="version-string">VT_SKOOL Portal</span>
+            <span> • </span>
+            <span>© 2025 VT_SKOOL</span>
+            <span> • </span>
             <KButton
               :text="coreString('usageAndPrivacyLabel')"
               appearance="basic-link"
@@ -279,35 +275,35 @@
       accessAsGuest: {
         message: 'Explore without account',
         context:
-          'Link on sign in page which upon clicking allows user to access Kolibri as a guest user.',
+          'Link on sign in page which upon clicking allows user to access VT_SKOOL as a guest user.',
       },
       oidcGenericExplanation: {
         message:
-          'Kolibri is an e-learning platform. You can also use your Kolibri account to log in to some third-party applications.',
-        context: 'Generic explanation about Kolibri.',
+          'VT_SKOOL is an e-learning platform. You can also use your VT_SKOOL account to log in to some third-party applications.',
+        context: 'Generic explanation about VT_SKOOL.',
       },
       // eslint-disable-next-line kolibri/vue-no-unused-translations
       oidcSpecificExplanation: {
         message:
-          "You were sent here from the application '{app_name}'. Kolibri is an e-learning platform, and you can also use your Kolibri account to access '{app_name}'.",
+          "You were sent here from the application '{app_name}'. VT_SKOOL is an e-learning platform, and you can also use your VT_SKOOL account to access '{app_name}'.",
         context:
-          'Explanation of Kolibri that a user sees if they are sent to Kolibri from a different application.',
+          'Explanation of VT_SKOOL that a user sees if they are sent to VT_SKOOL from a different application.',
       },
       poweredBy: {
-        message: 'Kolibri {version}',
+        message: 'VT_SKOOL {version}',
         context:
-          'Indicates the current version of Kolibri.\n\nFor languages with non-latin scripts, Kolibri should be transcribed phonetically into the target language, similar to a person\'s name. It should not be translated as "hummingbird".',
+          'Indicates the current version of VT_SKOOL.\n\nFor languages with non-latin scripts, VT_SKOOL should be transcribed phonetically into the target language, similar to a person\'s name. It should not be translated as "hummingbird".',
       },
       poweredByKolibri: {
-        message: 'Powered by Kolibri',
-        context: 'Indicates that Kolibri is the technology behind this application.',
+        message: 'Powered by VT_SKOOL',
+        context: 'Indicates that VT_SKOOL is the technology behind this application.',
       },
       whatsThis: {
         message: "What's this?",
         context: 'Link with explanation of the authentication process.',
       },
       restrictedAccess: {
-        message: 'Access to Kolibri has been restricted for external devices',
+        message: 'Access to VT_SKOOL has been restricted for external devices',
         context: 'Error message description.',
       },
       restrictedAccessDescription: {

@@ -1,16 +1,12 @@
 <template>
 
   <KModal
-    :title="$tr('welcomeModalHeader')"
+    title="Welcome to VT_SKOOL Portal!"
     :submitText="coreString('continueAction')"
     @submit="$emit('submit')"
   >
-    <p
-      v-for="(paragraph, idx) in paragraphs"
-      :key="idx"
-      class="paragraph"
-    >
-      {{ paragraph }}
+    <p class="paragraph">
+      There is nothing in your library yet. Explore libraries around you and start adding materials to your own.
     </p>
   </KModal>
 
@@ -42,44 +38,17 @@
         default: false,
       },
     },
-    computed: {
-      paragraphs() {
-        if (this.isLearnerOnlyImport) {
-          let facility = this.importedFacility;
-          if (this.facilities.length > 0 && facility === null) facility = this.facilities[0];
-          const sndParagraph =
-            facility === null
-              ? this.$tr('learnOnlyDeviceWelcomeMessage2')
-              : this.$tr('postSyncWelcomeMessage2', { facilityName: facility.name });
-          return [this.$tr('learnOnlyDeviceWelcomeMessage1'), sndParagraph];
-        }
-        if (this.isOnMyOwnUser) {
-          return [this.coreString('nothingInLibraryLearner')];
-        }
-        if (this.importedFacility) {
-          return [
-            this.$tr('postSyncWelcomeMessage1'),
-            this.$tr('postSyncWelcomeMessage2', { facilityName: this.importedFacility.name }),
-          ];
-        } else {
-          return [
-            this.$tr('welcomeModalContentDescription'),
-            this.$tr('welcomeModalPermissionsDescription'),
-          ];
-        }
-      },
-    },
+    // paragraphs logic removed, hardcoded modal content
 
     render: createElement => window.setTimeout(createElement, 750),
     $trs: {
       welcomeModalHeader: {
-        message: 'Welcome to Kolibri!',
+        message: 'Welcome to VT_SKOOL Portal!',
         context: 'Title of welcome window which displays on first sign in as a super admin.',
       },
       welcomeModalContentDescription: {
-        message: 'The first thing you should do is import some resources from the Channels tab.',
-        context:
-          'Text that appears on welcome window when a super admin sets up a facility for the first time.',
+        message: 'There is nothing in your library yet. Explore libraries around you and start adding materials to your own.',
+        context: 'Message shown when the library is empty.',
       },
       welcomeModalPermissionsDescription: {
         message:

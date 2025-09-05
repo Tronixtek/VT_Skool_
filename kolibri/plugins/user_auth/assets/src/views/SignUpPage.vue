@@ -320,7 +320,7 @@
         context: 'Title on sign in page where user creates an account.',
       },
       documentTitle: {
-        message: 'Create account',
+        message: 'kreat akant',
         context:
           "Title of the 'Create account' page accessed by selecting the 'CREATE  AN ACCOUNT' button.",
       },
@@ -337,7 +337,7 @@
       privacyLinkText: {
         message: 'Learn more about usage and privacy',
         context:
-          'Link to open the Kolibri usage and privacy modal. It will be displayed alongside the text describing collection of demographic user information.',
+          'Link to open the VT_SKOOL usage and privacy modal. It will be displayed alongside the text describing collection of demographic user information.',
       },
     },
   };

@@ -36,7 +36,7 @@ export default {
   actions: {
     updateDeviceName(store, name) {
       return client({
-        url: urls['kolibri:core:devicename'](),
+        url: urls['VT_SKOOL:core:devicename'](),
         method: 'PATCH',
         data: {
           name,

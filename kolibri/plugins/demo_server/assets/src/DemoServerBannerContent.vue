@@ -46,8 +46,8 @@
     },
     $trs: {
       demoServerHeader: {
-        message: 'Welcome to the Kolibri demo site',
-        context: 'Title on Kolibri demo site sign in page.',
+        message: 'Welcome to the VT_SKOOL demo site',
+        context: 'Title on VT_SKOOL demo site sign in page.',
       },
       demoServerP1: {
         message: 'Explore any of these user types:',
@@ -65,22 +65,22 @@
       },
       demoServerP2: {
         message:
-          'This online version of Kolibri is intended for demonstration purposes only. Users and data will be periodically deleted. The demo shows features of the latest Kolibri version, and all resources found are samples.',
-        context: 'Descriptive text on Kolibri demo sign in page.',
+          'This online version of VT_Skool is intended for demonstration purposes only. Users and data will be periodically deleted. The demo shows features of the latest VT_Skool version, and all resources found are samples.',
+        context: 'Descriptive text on VT_Skool demo sign in page.',
       },
       demoServerP3: {
         message:
-          'To learn more about using Kolibri in an offline context and better understand the platform:',
-        context: 'Descriptive text on Kolibri demo sign in page.',
+          'To learn more about using VT_SKOOL in an offline context and better understand the platform:',
+        context: 'Descriptive text on VT_SKOOL demo sign in page.',
       },
       demoServerA1: {
         message: 'Read the documentation',
-        context: 'Link from sign in page which takes user to the Kolibri documentation website.',
+        context: 'Link from sign in page which takes user to the VT_SKOOL documentation website.',
       },
       demoServerA2: {
         message: 'Download and install the latest release',
         context:
-          'Link on sign in page which takes user to a web page where they can download the latest version of Kolibri.',
+          'Link on sign in page which takes user to a web page where they can download the latest version of VT_Skool.',
       },
     },
   };

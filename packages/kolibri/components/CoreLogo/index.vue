@@ -4,7 +4,7 @@
     :is="component"
     altText=""
     :src="image"
-    :showBackground="true"
+    :showBackground="false"
   />
 
 </template>
@@ -25,7 +25,7 @@
         return this.src && this.src.length ? this.src : null;
       },
       component() {
-        return this.image ? 'img' : 'KLogo';
+        return this.image ? 'img' : 'Logo';
       },
     },
   };

@@ -4,7 +4,7 @@ const deviceStrings = createTranslator('CommonDeviceStrings', {
   deviceManagementTitle: {
     message: 'Device',
     context:
-      'The device is the physical or virtual machine that has the Kolibri server installed on it.',
+      'The device is the physical or virtual machine that has the VT_Skool server installed on it.',
   },
   emptyTasksMessage: {
     message: 'There are no tasks to display',
