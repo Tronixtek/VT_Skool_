@@ -80,7 +80,7 @@
       },
       setUpFacilityDescription: {
         message:
-          'This device will have Kolibri features for learners, but not those for coaches and admins',
+          'This device will have VT_Skool features for learners, but not those for coaches and admins',
         context: '',
       },
       joinFacilityLabel: {
