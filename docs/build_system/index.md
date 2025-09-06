@@ -4,7 +4,7 @@
 
 - How does the build system work overall?
 
-    The `Kolibri Python Package` pipeline creates a `whl` file and triggers every other pipeline. Those pipelines download the `whl` (or the `.deb`, in the pi image's case) from the associated build in `Kolibri Python Package` to build their own installer. See below for more detail.
+    The `VT_Skool Python Package` pipeline creates a `whl` file and triggers every other pipeline. Those pipelines download the `whl` (or the `.deb`, in the pi image's case) from the associated build in `VT_Skool Python Package` to build their own installer. See below for more detail.
 
     One key thing to remember: each build is associated with a specific commit. Builds happen as a Github "check" for each commit, and can be found on the associated commit inside of its "checks" links - denoted by a green checkmark (or a red X in the case of a failed build).
 
@@ -20,7 +20,7 @@
 
     "Block" steps can be unblocked via the Builkite GUI, on the build page. Clicking on the "Block" step should present you with a confirmation modal, asking if you want to proceed.
 
-    Most "secondary" pipelines - installer pipelines - have a "Block" step as their first, so that the build won't run unless the parent `Kolibri Python Package` build is a release.
+    Most "secondary" pipelines - installer pipelines - have a "Block" step as their first, so that the build won't run unless the parent `VT_Skool Python Package` build is a release.
 
 - How do I access builds for tagged releases?
 
@@ -125,18 +125,19 @@ We could probably make those systems work if need be. By self hosting, however, 
 
 There is one pipeline per installer, each is configured to listen to a different GH repository. :
 
-- `Kolibri Python Package`
-    - [https://github.com/learningequality/kolibri](https://github.com/learningequality/kolibri)
-- `Kolibri MacOS`
-    - [https://github.com/learningequality/kolibri-installer-mac](https://github.com/learningequality/kolibri-installer-mac)
-- `Kolibri Android Installer`
-    - [https://github.com/learningequality/kolibri-installer-android](https://github.com/learningequality/kolibri-installer-android)
-- `Kolibri Debian`
-    - [https://github.com/learningequality/kolibri-installer-debian](https://github.com/learningequality/kolibri-installer-debian)
-- `Kolibri Windows`
-    - [https://github.com/learningequality/kolibri-installer-windows](https://github.com/learningequality/kolibri-installer-windows)
-- `Kolibri Raspian Image`
-    - [https://github.com/learningequality/pi-gen](https://github.com/learningequality/pi-gen)
+
+- `VT_Skool Python Package`
+    - [https://github.com/Tronixtek/VT_Skool](https://github.com/Tronixtek/VT_Skool)
+- `VT_Skool MacOS`
+    - [your-macos-installer-link]
+- `VT_Skool Android Installer`
+    - [your-android-installer-link]
+- `VT_Skool Debian`
+    - [your-debian-installer-link]
+- `VT_Skool Windows`
+    - [your-windows-installer-link]
+- `VT_Skool Raspian Image`
+    - [your-raspian-installer-link]
 
 This implies a few things:
 
@@ -149,13 +150,13 @@ With one exception, each pipeline's sole concern is to build the asset it is nam
 
 ### Pipeline orchestration
 
-Presently, the `Kolibri Python Package` Pipeline carries more responsibility than the rest.
+Presently, the `VT_Skool Python Package` Pipeline carries more responsibility than the rest.
 
-Whereas the other pipelines' responsibilities stop at building and uploading their installer, `Kolibri Python Package` acts as the "kick off" point for the other installers. Being the only pipeline listening to the Kolibri repository on Github for changes, it is the only pipeline triggered by those changes.
+Whereas the other pipelines' responsibilities stop at building and uploading their installer, `VT_Skool Python Package` acts as the "kick off" point for the other installers. Being the only pipeline listening to the VT_Skool repository on Github for changes, it is the only pipeline triggered by those changes.
 
-After building the `.whl` and `.pex` in a single step, the `Kolibri Python Package` proceeds to trigger the other installers, most of which rely on the `.whl` file (The single exception is `Kolibri Raspbian Image`, which relies on the `.deb` installer).
+After building the `.whl` and `.pex` in a single step, the `VT_Skool Python Package` proceeds to trigger the other installers, most of which rely on the `.whl` file (The single exception is `VT_Skool Raspbian Image`, which relies on the `.deb` installer).
 
-These *trigger steps* live inside of the `Kolibri Python Package`, but send metadata to each of the other pipelines and trigger an entirely new build in each one.
+These *trigger steps* live inside of the `VT_Skool Python Package`, but send metadata to each of the other pipelines and trigger an entirely new build in each one.
 
 ### Block steps
 
@@ -163,7 +164,7 @@ These triggered builds are created simultaneously; this does not mean that the j
 
 For non-release builds, each Build's first step is a "Block" step - this kind of step does not create a job. At this point, the Build is "finished". That is, finished for now: the build will progress once user input confirming procession has been received.
 
-The "finished" signal on the triggered builds report back to the `Kolibri Python Package` pipeline, indicating it as "complete" even if no build has been run.
+The "finished" signal on the triggered builds report back to the `VT_Skool Python Package` pipeline, indicating it as "complete" even if no build has been run.
 
 **This allows for efficiency: Time won't be wasted waiting for every single installer to be built for non-release pipelines. If a developer *wants* one of the other installers, they may navigate to the appropriate pipeline and unblock the step.**
 
